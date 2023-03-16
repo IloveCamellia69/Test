@@ -1,0 +1,68 @@
+:root {
+	--black: rgb(15, 15, 15);
+	--white: rgb(218, 218, 218);
+	--accent: rgb(187, 28, 28);
+	--heading-font: "IBM Plex Mono", monospace;
+	--p-font: "Space Mono", monospace;
+}
+
+::selection {
+	background: var(--accent);
+}
+
+body {
+	margin: 0;
+	padding: 2.5rem;
+	box-sizing: border-box;
+	height: 100svh;
+	overflow: hidden;
+	background-color: var(--black);
+}
+
+h2 {
+	margin: 0;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--white);
+	overflow: hidden;
+}
+
+.head {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid var(--white);
+}
+
+.head > img {
+	width: 30px;
+	margin-left: 1rem;
+}
+
+.head > h2 {
+	font-family: var(--heading-font);
+	font-size: 2rem;
+	font-weight: 200;
+	color: var(--white);
+	padding: 1rem;
+}
+
+.side-panel {
+	width: 25rem;
+	height: 100%;
+	border-right: 1px solid var(--white);
+}
+
+.sum-1 {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.sum-1 > h2 {
+	font-family: var(--heading-font);
+	font-size: 1rem;
+	color: var(--white);
+}
