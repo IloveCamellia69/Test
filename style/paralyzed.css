@@ -1,0 +1,21 @@
+.paralyzed {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.paralyzed > a {
+	font-family: var(--secondary-font);
+	font-size: 4rem;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.paralyzed:hover {
+	background-color: var(--white);
+}
+
+.paralyzed > a:hover {
+	color: var(--black);
+}

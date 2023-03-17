@@ -1,0 +1,29 @@
+.typing-effect {
+	width: 56ch;
+	animation: typing 2s steps(117), blink 0.5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	color: var(--accent);
+	border-right: 3px solid var(--accent);
+}
+
+.typing-effect > a {
+	color: var(--accent);
+}
+
+.typing-effect > a:hover {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}

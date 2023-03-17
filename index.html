@@ -11,15 +11,23 @@
 			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/main.css" />
+		<link rel="stylesheet" href="style/index-style.css" />
 		<title>Eclipse</title>
 	</head>
 	<body>
+		<div class="cursor">
+			<div class="horizontal" id="horizontal"></div>
+			<div class="virtical" id="virtical"></div>
+		</div>
 		<div class="main-body">
 			<div class="title">
 				<img src="images/icon.svg" alt="icon" />
-				<h2>Midnight Dreams</h2>
+				<h2 data-value="MIDNIGHT DREAMS" id="text-effect">
+					MIDNIGHT DREAMS
+				</h2>
 			</div>
+
 			<div class="content">
 				<div class="nav-panel">
 					<div class="sum-section">
@@ -132,128 +140,46 @@
 							</div>
 						</div>
 					</div>
-					<div class="footer">
+					<pre>
++8-=-=-=-=-=-8+
+ | ,.-'"'-., |
+ |/         \|
+ |\:.     .:/|
+ | \:::::::/ |
+ |  \:::::/  |
+ |   \:::/   |
+ |    ):(    |
+ |   / . \   |
+ |  /  .  \  |
+ | /   .   \ |
+ |/   .:.   \|
+ |\.:::::::./|
+ | '--___--' |
++8-=-=-=-=-=-8+
+</pre
+					>
+				</div>
+				<div class="main-panel">
+					<div class="main-text">
 						<p>
-							Copyright &copy; 2023 All Rights Reserved by Jacky
-							Lin.
+							This place is empty. There is no other places to be.
 						</p>
+						<div class="typing-effect">
+							<a href="paralized.html">
+								<span>
+									Why not stay for the night and i'll sell you
+									a dream. ↴</span
+								></a
+							>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- <div class="main">
-			<div class="head">
-				<img src="images/icon.svg" alt="icon" />
-				<h2>Midnight Dreams</h2>
-			</div>
-			<div class="main-content">
-				<div class="side-panel">
-					<div class="sum-section">
-						<div class="sum-title">
-							<span>Summative 1</span>
-							<span>↴</span>
-						</div>
-
-						<div class="sum-content">
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 001</span>
-								</a>
-							</div>
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 002</span>
-								</a>
-							</div>
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 003</span>
-								</a>
-							</div>
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 004</span>
-								</a>
-							</div>
-							<div class="ext-links">
-								<h2>External Links:</h2>
-								<div class="link">
-									<a href="#">
-										<span>ᐁ</span>
-										<span>Trello</span>
-									</a>
-								</div>
-								<div class="link">
-									<a href="#">
-										<span>ᐁ</span>
-										<span>Figma Prototype</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="sum-section">
-						<div class="sum-title">
-							<span>Summative 2</span>
-							<span>↴</span>
-						</div>
-
-						<div class="sum-content">
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 001</span>
-								</a>
-							</div>
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 002</span>
-								</a>
-							</div>
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 003</span>
-								</a>
-							</div>
-							<div class="link">
-								<a href="#">
-									<span>Week</span>
-									<span>| 004</span>
-								</a>
-							</div>
-							<div class="ext-links">
-								<h2>External Links:</h2>
-								<div class="link">
-									<a href="#">
-										<span>ᐁ</span>
-										<span>Trello</span>
-									</a>
-								</div>
-								<div class="link">
-									<a href="#">
-										<span>ᐁ</span>
-										<span>Figma Prototype</span>
-									</a>
-								</div>
-								<div class="link">
-									<a href="#">
-										<span>ᐁ</span>
-										<span>Website</span>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div> -->
+		<footer>
+			<p>Copyright &copy; 2023 All Rights Reserved by Jacky Lin.</p>
+		</footer>
+		<script src="/javascript/text-effect.js"></script>
+		<script src="/javascript/cursor.js"></script>
 	</body>
 </html>
