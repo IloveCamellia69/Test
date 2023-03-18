@@ -19,3 +19,10 @@
 .paralyzed > a:hover {
 	color: var(--black);
 }
+
+.skull {
+	height: 100%;
+	display: grid;
+	place-items: center;
+	font-size: 1.5rem;
+}
