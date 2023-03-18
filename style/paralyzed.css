@@ -3,17 +3,18 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: 1;
 }
 
 .paralyzed > a {
 	font-family: var(--secondary-font);
-	font-size: 4rem;
+	font-size: 2rem;
 	text-decoration: none;
 	color: var(--white);
 }
 
 .paralyzed:hover {
-	background-color: var(--white);
+	background-color: var(--accent);
 }
 
 .paralyzed > a:hover {
@@ -25,4 +26,5 @@
 	display: grid;
 	place-items: center;
 	font-size: 1.5rem;
+	animation: flicker 200ms infinite;
 }

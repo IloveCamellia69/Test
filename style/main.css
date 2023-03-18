@@ -1,5 +1,5 @@
 :root {
-	--black: rgb(5, 5, 5);
+	--black: rgb(10, 10, 10);
 	--white: rgb(218, 218, 218);
 	--accent: rgb(187, 28, 28);
 	--main-font: "IBM Plex Mono", monospace;
@@ -20,9 +20,12 @@ html {
 	cursor: crosshair;
 }
 
+pre {
+	color: var(--accent);
+}
+
 .cursor {
-	animation: flicker 200ms ease-in-out infinite;
-	animation-delay: 1s;
+	animation: flicker 300ms ease-in-out infinite;
 }
 
 @keyframes flicker {
@@ -32,7 +35,7 @@ html {
 	63.999%,
 	65%,
 	69.999% {
-		opacity: 0.5;
+		opacity: 0.1;
 	}
 	0%,
 	19.999%,
@@ -77,13 +80,6 @@ h2,
 h3,
 p {
 	margin: 0;
-}
-
-pre {
-	height: 55%;
-	color: var(--accent);
-	display: grid;
-	place-content: center;
 }
 
 .hide {
@@ -182,6 +178,16 @@ pre {
 .ext-links-title > h2 {
 	font-family: var(--main-font);
 	font-size: 1rem;
+}
+
+.hour-glass {
+	height: 39.5%;
+	display: grid;
+	place-content: center;
+}
+
+.hour-glass > pre {
+	width: 15ch;
 }
 
 .main-panel {
