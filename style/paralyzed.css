@@ -27,4 +27,5 @@
 	place-items: center;
 	font-size: 1.5rem;
 	animation: flicker 200ms infinite;
+	user-select: none;
 }

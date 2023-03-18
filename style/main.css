@@ -184,6 +184,7 @@ p {
 	height: 39.5%;
 	display: grid;
 	place-content: center;
+	user-select: none;
 }
 
 .hour-glass > pre {
