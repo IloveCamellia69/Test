@@ -19,7 +19,6 @@
 
 .quote {
 	display: flex;
-	justify-content: space-between;
 	color: var(--accent);
 }
 
