@@ -8,7 +8,7 @@
 .typing-effect {
 	width: 56ch;
 	animation: typing 2s steps(50), blink 0.5s step-end infinite alternate;
-	animation-delay: 1600ms;
+	animation-delay: 500ms;
 	white-space: nowrap;
 	overflow: hidden;
 	color: var(--accent);

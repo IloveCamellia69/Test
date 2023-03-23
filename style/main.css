@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar {
-	width: 1px;
+	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -217,12 +217,21 @@ p {
 }
 .main-panel {
 	width: 100%;
+	height: 97%;
+	overflow-y: scroll;
 }
 
 .main-panel > .main-text {
 	font-family: var(--main-font);
 	color: var(--white);
 	font-size: 1rem;
+}
+
+.container {
+	width: 1100px;
+	height: 97%;
+	margin: 0 auto;
+	padding-right: 20px;
 }
 
 footer > p {
