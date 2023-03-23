@@ -1,0 +1,50 @@
+.m-title {
+	font-family: var(--main-font);
+	color: var(--accent);
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.m-title::after {
+	content: "↴";
+	margin-right: 4rem;
+}
+
+.m-subtitle {
+	font-family: var(--main-font);
+	color: var(--white);
+	font-size: 1rem;
+}
+
+.m-text {
+	font-family: var(--secondary-font);
+	color: var(--white);
+	font-size: 1rem;
+}
+
+.quote {
+	display: flex;
+	color: var(--accent);
+}
+
+.quote > span {
+	margin-right: 1rem;
+}
+
+img {
+	width: 100%;
+}
+
+hr {
+	margin: 3rem 0;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+p {
+	margin: 1.5rem 0;
+}

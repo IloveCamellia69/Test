@@ -5,5 +5,5 @@ const boxes = document.querySelectorAll('div');
 boxes.forEach((box, index) => {
   setTimeout(() => {
     box.classList.remove('hide');
-  }, index * 50); // add a delay based on the box index
+  }, index * 15); // add a delay based on the box index
 });

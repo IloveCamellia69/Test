@@ -3,17 +3,18 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: 1;
 }
 
 .paralyzed > a {
 	font-family: var(--secondary-font);
-	font-size: 4rem;
+	font-size: 2rem;
 	text-decoration: none;
 	color: var(--white);
 }
 
 .paralyzed:hover {
-	background-color: var(--white);
+	background-color: var(--accent);
 }
 
 .paralyzed > a:hover {
@@ -25,4 +26,27 @@
 	display: grid;
 	place-items: center;
 	font-size: 1.5rem;
+	animation: skull-flicker 200ms infinite;
+	user-select: none;
+}
+
+@keyframes skull-flicker {
+	20%,
+	21.999%,
+	63%,
+	63.999%,
+	65%,
+	69.999% {
+		opacity: 0.9;
+	}
+	0%,
+	19.999%,
+	22%,
+	62.999%,
+	64%,
+	64.999%,
+	70%,
+	100% {
+		opacity: 0.5;
+	}
 }
