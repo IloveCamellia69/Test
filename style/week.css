@@ -44,3 +44,7 @@ hr {
 ul {
 	list-style-type: circle;
 }
+
+p {
+	margin: 1.5rem 0;
+}
