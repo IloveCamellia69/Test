@@ -40,3 +40,7 @@ img {
 hr {
 	margin: 3rem 0;
 }
+
+ul {
+	list-style-type: circle;
+}
