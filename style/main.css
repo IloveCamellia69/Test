@@ -61,6 +61,13 @@ pre {
 	}
 }
 
+.cursor > h2 {
+	position: absolute;
+	font-family: var(--main-font);
+	color: var(--accent);
+	font-size: 15px;
+}
+
 .horizontal,
 .virtical {
 	background-color: var(--white);
@@ -113,6 +120,11 @@ p {
 }
 
 .title > a {
+	width: 220px;
+	overflow: hidden;
+}
+
+.title > a {
 	font-family: var(--main-font);
 	color: var(--white);
 	text-decoration: none;
@@ -120,6 +132,17 @@ p {
 
 .title > a > h2 {
 	font-weight: 100;
+	transform: translateX(100%);
+	animation: scroll-left 6s linear infinite;
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 .title > img {
