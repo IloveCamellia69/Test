@@ -26,6 +26,7 @@ html {
 	height: 100vh;
 	width: 100vw;
 	cursor: crosshair;
+	overflow: hidden;
 }
 
 :hover {
@@ -34,6 +35,12 @@ html {
 
 pre {
 	color: var(--accent);
+}
+
+@media screen and (width < 1281px) {
+	.hour-glass pre {
+		display: none;
+	}
 }
 
 .cursor {
@@ -77,12 +84,18 @@ pre {
 
 .horizontal {
 	height: 1px;
-	width: 100%;
+	width: 97.5%;
 }
 
 .virtical {
 	width: 1px;
 	height: 100%;
+}
+
+@media screen and (width < 1281px) {
+	.cursor {
+		display: none;
+	}
 }
 
 body {
@@ -122,9 +135,6 @@ p {
 .title > a {
 	width: 220px;
 	overflow: hidden;
-}
-
-.title > a {
 	font-family: var(--main-font);
 	color: var(--white);
 	text-decoration: none;
@@ -162,7 +172,7 @@ p {
 }
 
 .nav-panel {
-	width: 20%;
+	width: 300px;
 	border-right: 1px solid var(--white);
 	display: flex;
 	flex-direction: column;
@@ -244,6 +254,7 @@ p {
 	width: 100%;
 	height: 97%;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .main-panel > .main-text {
@@ -260,7 +271,35 @@ p {
 
 footer > p {
 	font-family: var(--main-font);
-	font-size: 12px;
+	font-size: 10px;
 	color: var(--white);
 	margin: 0;
+}
+
+@media screen and (width < 851px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+	.content {
+		flex-direction: column;
+	}
+
+	.nav-panel {
+		display: none;
+		position: absolute;
+		margin: 0 auto;
+		width: 250px;
+		height: 520px;
+		border: 1px solid var(--white);
+		background-color: var(--black);
+	}
+
+	.nav-panel.active {
+		display: block;
+	}
+
+	.main-panel .container {
+		padding: 0.5rem;
+	}
 }

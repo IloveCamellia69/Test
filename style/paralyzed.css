@@ -13,6 +13,12 @@
 	color: var(--white);
 }
 
+@media screen and (width < 1281px) {
+	.paralyzed a {
+		font-size: 1.9rem;
+	}
+}
+
 .paralyzed:hover {
 	background-color: var(--accent);
 }
