@@ -227,6 +227,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	height: 97%;
+	overflow-y: scroll;
 }
 
 .sum-section {
@@ -294,6 +295,7 @@ p {
 	display: grid;
 	place-content: center;
 	user-select: none;
+	margin: 40px 0;
 }
 
 .hour-glass > pre {
