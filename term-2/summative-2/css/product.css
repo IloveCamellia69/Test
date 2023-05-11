@@ -30,7 +30,7 @@ main {
 
 .buybag-container {
 	margin-left: 10px;
-	width: 340px;
+	width: 370px;
 	font-family: var(--font-main);
 	display: flex;
 	flex-direction: column;
@@ -40,6 +40,10 @@ main {
 .size-selector {
 	display: flex;
 	gap: 5px;
+}
+
+.img-titles {
+	width: 370px;
 }
 
 button {
@@ -91,16 +95,13 @@ button.active {
 }
 
 .shirt-info-container {
-	width: 340px;
+	width: 370px;
 	font-family: var(--font-main);
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 }
 
-.img-titles {
-	width: 340px;
-}
 .name-list {
 	text-align: right;
 	font-family: var(--font-main);

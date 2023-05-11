@@ -9,6 +9,7 @@ main {
 
 .shirt-one-title p:nth-child(2) {
 	font-size: 30px;
+	margin-bottom: 60px;
 }
 
 .main-heading {
@@ -52,7 +53,7 @@ main {
 }
 
 .shirt-one {
-	margin-top: 20px;
+	margin: 50px 0;
 	font-family: var(--font-main);
 }
 
@@ -60,8 +61,13 @@ main {
 	width: 500px;
 }
 
+.shirt-one-img p {
+	font-size: 20px;
+}
+
 .shirt-one-closeup {
-	margin-top: 40px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 .set-1,
