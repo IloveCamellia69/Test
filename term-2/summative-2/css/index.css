@@ -1,0 +1,127 @@
+main {
+	padding: 0 10px;
+	padding-top: 20px;
+}
+
+.shirt-one-title p:nth-child(1) {
+	font-size: 70px;
+}
+
+.shirt-one-title p:nth-child(2) {
+	font-size: 30px;
+	margin-bottom: 60px;
+}
+
+.main-heading {
+	width: 100%;
+	padding: 10px 0;
+	font-family: var(--font-main);
+}
+
+.title {
+	margin-top: 40px;
+}
+
+.main-heading .title p {
+	font-size: clamp(1rem, 130px, 10vw);
+	line-height: 160px;
+}
+
+.main-heading p {
+	font-size: 25px;
+}
+
+.main-heading p {
+	width: 80%;
+}
+
+.hero-imgs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.img-2,
+.img-1 {
+	width: 50%;
+}
+
+.img-2 img,
+.img-1 img {
+	width: 100%;
+}
+
+.shirt-one {
+	margin: 50px 0;
+	font-family: var(--font-main);
+}
+
+.shirt-one-img img {
+	width: 500px;
+}
+
+.shirt-one-img p {
+	font-size: 20px;
+}
+
+.shirt-one-closeup {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.set-1,
+.set-2 {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.set-22,
+.set-2 {
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 1640px) {
+	.title h2:nth-child(2) {
+		margin-top: -0;
+	}
+	.title {
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.hero-imgs {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.img-2,
+	.img-1 {
+		width: 100%;
+	}
+	.set-1,
+	.set-2 {
+		flex-direction: column;
+	}
+
+	.main-heading .title p {
+		line-height: 110px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.shirt-one-img img,
+	.shirt-one-closeup img {
+		width: 100% !important;
+	}
+
+	.title {
+		margin-top: 30px;
+	}
+
+	.main-heading .title p {
+		line-height: 60px;
+	}
+}

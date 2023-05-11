@@ -1,0 +1,158 @@
+html {
+	font-family: var(--font-main);
+}
+
+main {
+	margin: 0 10px;
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+.title {
+	font-size: 25px;
+}
+
+.undeline {
+	width: 750px;
+	height: 1px;
+	background-color: var(--colour-orange);
+	margin: 5px 0;
+}
+
+.items {
+	width: 150px;
+}
+
+.col-titles {
+	display: flex;
+}
+
+.col-titles .items:nth-child(4),
+.col-titles .items:nth-child(5) {
+	text-align: right;
+}
+
+.table-footer-text {
+	width: 750px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.table-footer-text h2 {
+	font-size: 15px;
+}
+
+.buy {
+	margin-top: 20px;
+}
+
+.buy button {
+	width: 140px;
+	height: 35px;
+	text-decoration: none;
+	border: none;
+}
+
+.buy button a {
+	text-decoration: none;
+	color: var(--colour-white);
+}
+
+.buy button {
+	background-color: var(--colour-black);
+}
+
+main {
+	height: calc(100vh - 167px);
+}
+
+.item-banner {
+	display: flex;
+}
+
+.price,
+.subtotal,
+.remove,
+.item-info,
+.item-img {
+	width: 150px;
+}
+
+.item-info {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.remove h2,
+.item-info h2 {
+	font-size: 15px;
+}
+
+.size,
+.quant,
+.name {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	font-family: var(--font-main);
+	width: 55px;
+	height: 17px;
+	background-color: var(--colour-black);
+	border: 1px solid var(--colour-black);
+	color: var(--colour-white);
+}
+
+.remove,
+.price,
+.subtotal {
+	text-align: right;
+}
+
+.table-item {
+	margin: 10px 0;
+}
+
+.item-img img {
+	width: 120px;
+}
+
+@media only screen and (max-width: 770px) {
+	main {
+		height: auto;
+	}
+	.table-footer-text,
+	.undeline {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.item-banner {
+		display: grid;
+		grid-template-columns: 0.4fr 1fr;
+		row-gap: 20px;
+	}
+
+	.price::before {
+		content: "PRICE:";
+		font-weight: 600;
+	}
+
+	.subtotal {
+		display: none;
+	}
+	.col-titles .items:nth-child(3),
+	.col-titles .items:nth-child(4),
+	.col-titles .items:nth-child(5) {
+		display: none;
+	}
+
+	.remove {
+		text-align: left;
+	}
+}

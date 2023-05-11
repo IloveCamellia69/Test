@@ -48,3 +48,12 @@ ul {
 p {
 	margin: 1.5rem 0;
 }
+
+@media screen and (width < 851px) {
+	.m-title {
+		font-size: 25px;
+	}
+	.m-text {
+		font-size: 12px;
+	}
+}
